@@ -1,11 +1,20 @@
 import React from 'react'
 import ToDoListItem from '../ToDoListItem/ToDoListItem'
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
+
+  const elements = todos.map((item) => {
+    return (
+      <li>
+        {/* використали спред оператор для обєктів, для того щоб передати усі ключі і значення з нашого стейту */}
+        <ToDoListItem { ...item }/>
+      </li>
+    )
+  })
+
   return(
     <ul>
-      <li><ToDoListItem /></li>
-      <li><ToDoListItem /></li>
+      { elements }
     </ul>
   )
 }
