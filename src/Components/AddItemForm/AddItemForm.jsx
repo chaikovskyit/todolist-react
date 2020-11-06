@@ -39,7 +39,7 @@ class AddItemForm extends Component {
         <button 
           className="btn btn-outline-secondary"
         >
-          Add Item
+          Add
         </button>
       </form>
     )

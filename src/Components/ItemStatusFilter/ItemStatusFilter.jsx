@@ -20,7 +20,7 @@ class ItemStatusFilter extends Component {
           key={name}
           type="button"
           className={`btn ${clazz}`}
-          onClick={() => noFilterChange(name)}
+          onClick={() => onFilterChange(name)}
         >
           {label}
         </button>
