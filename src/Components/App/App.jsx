@@ -116,9 +116,6 @@ class App extends Component {
         return items
     }
   }
-
-  
-
   render () {
     const { todoData, term, filter } = this.state
     // спочатку шукаємо, тоді фільтруємо і отримуєм результуючі айтеми на виході

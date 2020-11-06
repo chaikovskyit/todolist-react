@@ -4,12 +4,9 @@ import ToDoListItem from '../ToDoListItem/ToDoListItem'
 import './ToDoList.css'
 
 const TodoList = ({ todos, onDeleted, onToggleImportant, onToggleDone }) => {
-
   const elements = todos.map((item) => {
-
     // Отримуємо id з item а все інше маємо в itemProps
     const { id, ...itemProps } = item
-
 
     return (
       <li key={id} className="list-group-item">
@@ -22,7 +19,7 @@ const TodoList = ({ todos, onDeleted, onToggleImportant, onToggleDone }) => {
       </li>
     )
   })
-
+  
   return(
     <ul className="list-group ToDoList">
       { elements }

@@ -1,20 +1,15 @@
 import React, {Component} from 'react'
-
 import './AddItemForm.css'
-
-
 
 class AddItemForm extends Component {
   state = {
     label: ''
   }
-
   onLabelChange = (e) => {
     this.setState({
       label: e.target.value
     })
   }
-
   onSubmit = (e) => {
     e.preventDefault()
     this.props.onItemAdded(this.state.label)
