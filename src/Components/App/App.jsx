@@ -14,8 +14,8 @@ class App extends Component {
   state = {
     // масив елементів 
     todoData: [
-      {label: 'hello', important: false, done: false, id: 1 },
-      {label: 'react', important: false, done: false, id: 2 },
+      {label: 'Task important', important: true, done: false, id: 1 },
+      {label: 'task done', important: false, done: true, id: 2 },
     ],
     // елемент який відповідає за те що введено в полі пошук
     term: '',
